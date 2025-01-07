@@ -14,7 +14,7 @@ const ServicesPage = () => {
             <AvatarServices /> 
             <AvatarLogo className={`flex justify-center relative pt-40 md:pt-0 md:w-full md:fixed md:right-1/3
             top-5 pb-0`}/>
-            <div className="grid items-center justify-center gap-3  max-w-5xl mx-auto md:h-screen md:grid-cols-2 pr-4 pl-4 pb-96 md:p-0 md:pt-0">
+            <div className="grid items-center justify-center gap-3  max-w-5xl mx-auto md:h-screen md:grid-cols-2 pr-4 pl-4 pb-48 md:p-0 md:pt-0">
                 <div className="max-w-[450px] md:mt-0">
 
                     <MotionTransition position="right" className="mt-8">
