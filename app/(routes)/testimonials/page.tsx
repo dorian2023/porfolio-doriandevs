@@ -16,7 +16,7 @@ const TestimonialsPage = () => {
     return (
         <>
             <TransitionPage />
-            <div className='flex flex-col justify-center h-lvh'>
+            <div className='flex flex-col justify-center h-lvh gap-5'>
                 <AvatarLogo className={`flex justify-center relative md:w-full md:fixed md:left-1/3
                  top-5 mt-0 pb-0`}/>
                 <AvatarPortfolio />
@@ -42,7 +42,7 @@ const TestimonialsPage = () => {
                                     clickable: true
                                 }}
                                 modules={[Pagination]}
-                                className="h-[380px] md:h-[300px] w-[270px] md:w-[550px] mb-5 md:mb-0"
+                                className="h-[280px] md:h-[300px] w-[270px] md:w-[550px] mb-5 md:mb-0"
                             >
                                 {dataTestimonials.map(({ id, name, description, imageUrl }) => (
                                     <SwiperSlide key={id}>
