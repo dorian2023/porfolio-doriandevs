@@ -16,11 +16,10 @@ const TestimonialsPage = () => {
     return (
         <>
             <TransitionPage />
+            <AvatarLogo className={`flex justify-center relative md:w-full md:fixed md:left-1/3top-5 mt-0 pb-0`}/> 
+            <AvatarPortfolio />
+            <CircleImage />
             <div className='flex flex-col justify-center h-lvh gap-5'>
-                <AvatarLogo className={`flex justify-center relative md:w-full md:fixed md:left-1/3
-                 top-5 mt-0 pb-0`}/>
-                <AvatarPortfolio />
-                <CircleImage />
                 <MotionTransition position='bottom'>
                     <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
                         Algunos comentarios
