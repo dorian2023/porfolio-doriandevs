@@ -9,7 +9,7 @@ const Introduction = () => {
          
             <div className="z-20 grid justify-items-center items-center  h-full md:p-6 py-48 md:py-0 md:grid-cols-2">
                 <MotionTransition position="bottom">
-                    <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" className="w-80 md:w-4/5 h-80 md:h-4/5 ml-16  md:m-0"  />
+                    <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" className="w-80 md:w-4/5 h-80 md:h-4/5 ml-16  md:m-0 md:pl-60"/>
                 </MotionTransition>
                 <MotionTransition position="right" className="flex flex-col m-2 md:ml-0 justify-items-center max-w-md">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
