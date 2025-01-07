@@ -9,7 +9,7 @@ const AvatarLogo = ({ className = '' }: AvatarLogoProps) => {
     return (
         <>
         <MotionTransition position='right' className={`${className}`}>
-            <Image src="/DAGS.png" width="400" height="400" className="w-60 md:w-[350px] md:h-full " alt="Particles"/>
+            <Image src="/DAGS.png" width="400" height="400" className="w-52 md:w-[350px] md:h-full " alt="Particles"/>
         </MotionTransition>
         </>
     );
