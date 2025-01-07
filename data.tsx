@@ -12,21 +12,6 @@ export const socialNetworks = [
         src: "#!",
     },
     {
-        id: 3,
-        logo: <Facebook size={30} strokeWidth={1} />,
-        src: "https://www.facebook.com/profile.php?id=100015079668947",
-    },
-    {
-        id: 4,
-        logo: <Music2Icon size={30} strokeWidth={2} />,
-        src: "https://www.tiktok.com/@doriandeveloper",
-    },
-    {
-        id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
-        src: "https://www.twitch.tv/doriangonzalez2018",
-    },
-    {
         id: 6,
         logo: <Github size={30} strokeWidth={1} />,
         src: "https://github.com/dorian2023?tab=repositories",
@@ -166,14 +151,14 @@ export const dataPortfolio = [
     },
     {
         id: 2,
-        title: "Inventory Manager",
-        image: "/imagen-15.png",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Portfolio-Dev (PERSONAL)",
+        image: "/imagen-14.png",
+        urlGithub: "https://github.com/dorian2023/porfolio-doriandevs",
+        urlDemo: "https://doriandevs-portfolio.netlify.app/",
     },
     {
         id: 8,
-        title: "Data Analyst",
+        title: "Data Analyst & Inventory Manager",
         image: "/imagen-15.png",
         urlGithub: "#!",
         urlDemo: "#!",
@@ -200,33 +185,5 @@ export const dataTestimonials = [
         description:
             "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
         imageUrl: "/profile1.png",
-    },
-    {
-        id: 3,
-        name: "María García",
-        description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 5,
-        name: "Carlos Sánchez",
-        description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
-        imageUrl: "/profile1.png",
-    },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile1.png",
-    },
+    }
 ];

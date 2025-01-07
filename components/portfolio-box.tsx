@@ -21,7 +21,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
             key={id}
             className="p-4  w-auto md:w-auto border border-teal-50 rounded-xl hover:border-e-terciaro hover:shadow-xl hover:shadow-terciaro"
         >
-            <h3 className="mb-4 text-xl">{title}</h3>
+            <h3 className="mb-4 text-sm md:text-xl h-11 md:h-auto">{title}</h3>
             <Image
                 src={image}
                 alt="Image" 
