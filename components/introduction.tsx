@@ -7,11 +7,11 @@ const Introduction = () => {
     return (
         <div className="z-20 w-full bg-darkBg/60">
          
-            <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
+            <div className="z-20 grid items-center  h-full md:p-6 py-20 md:py-0 md:grid-cols-2">
                 <MotionTransition position="bottom">
-                    <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" />
+                    <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" className="w-80 md:w-full h-80 md:h-full ml-16  md:m-0"  />
                 </MotionTransition>
-                <MotionTransition position="right" className="flex flex-col ml-8 md:ml-0 justify-center max-w-md">
+                <MotionTransition position="right" className="flex flex-col m-2 md:ml-0 justify-center max-w-md">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
                         <TypeAnimation
                             sequence={[

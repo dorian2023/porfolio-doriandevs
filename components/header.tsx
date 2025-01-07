@@ -27,7 +27,7 @@ const Header = () => {
                             wrapper="h1"
                             speed={10}
                             repeat={Infinity}
-                            className="my-3 text-5xl font-bold "
+                            className="my-3 text-3xl md:text-5xl font-bold "
                         />
                      
                     </Link>
