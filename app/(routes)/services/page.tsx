@@ -27,7 +27,7 @@ const ServicesPage = () => {
                 </div>
 
                 {/* SLIDER */}
-                <MotionTransition position="bottom" className="mt-8 mb-10 md:mb-0">
+                <MotionTransition position="bottom" className="mt-8 md:mb-0">
                     <SliderServices />
                 </MotionTransition>
             </div>
