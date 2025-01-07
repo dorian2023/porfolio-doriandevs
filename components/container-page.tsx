@@ -1,3 +1,5 @@
+'use client'
+
 interface ContainerPageProps {
     children: React.ReactNode
 }

@@ -1,9 +1,8 @@
-
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
 import { MotionTransition } from "./transition-component";
-import AvatarLogo from "./avatar-logo";
 
 const Introduction = () => {
     return (

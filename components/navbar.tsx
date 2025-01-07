@@ -1,12 +1,9 @@
 "use client"
 
 import Link from "next/link";
-
-import { itemsNavbar } from "@/data";
-
-import { MotionTransition } from "./transition-component";
 import { usePathname } from "next/navigation";
-
+import { MotionTransition } from "./transition-component";
+import { itemsNavbar } from "@/data";
 const Navbar = () => {
     const router = usePathname()
 
