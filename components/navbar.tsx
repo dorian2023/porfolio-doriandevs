@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 import { MotionTransition } from "./transition-component";
 import { itemsNavbar } from "@/data";
 const Navbar = () => {
