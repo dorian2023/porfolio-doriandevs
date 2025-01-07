@@ -31,7 +31,7 @@ const Introduction = () => {
                         />
                     </h1>
 
-                    <p className="mx-auto mb-2 text-xl  text-center md:text-left md:text-xl md:mx-0 md:mb-8">
+                    <p className="mx-auto mb-2 text-base text-center md:text-left md:text-xl md:mx-0 md:mb-8">
                         Apasionado desarrollador frontend y administrador de datos con una sólida experiencia en el diseño y desarrollo de aplicaciones web & mobile atractivas y funcionales. Ademas de implementar y mantener el sistema de gestión empresarial en donde manejo aspectos clave como la contabilidad, la facturación y el control de inventario.
                     </p>
 
