@@ -19,7 +19,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
     return (
         <div
             key={id}
-            className="p-4  w-3/4 md:w-auto border border-teal-50 rounded-xl hover:border-e-terciaro hover:shadow-xl hover:shadow-terciaro"
+            className="p-4  w-auto md:w-auto border border-teal-50 rounded-xl hover:border-e-terciaro hover:shadow-xl hover:shadow-terciaro"
         >
             <h3 className="mb-4 text-xl">{title}</h3>
             <Image
