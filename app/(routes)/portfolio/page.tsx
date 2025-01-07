@@ -28,7 +28,7 @@ const PortfolioPage = () => {
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos {' '} 
                     <TypeAnimation
                             sequence={[
-                                'trabajos ',
+                                'trabajos realizados',
                                 1000,
                                 'trabajos realizados..',
                                 1000,
