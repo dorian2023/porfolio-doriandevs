@@ -23,14 +23,14 @@ export const verProyectos = [
         id: 1,
         title:"Proyectos",
         link: "/portfolio",
-        className:"px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50"
+        className:"px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50",
         
     },
     { 
         id: 2,
         title:"Contacto",
         link: "https://wa.me/584129782130?text=Me,%20gustaria%20tus%20servicios.",
-        className:"px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-terciaro border-terciaro rounded-xl hover:shadow-xl hover:shadow-terciaro"
+        className:"px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-terciaro border-terciaro rounded-xl hover:shadow-xl hover:shadow-terciaro",
         
         
     },
