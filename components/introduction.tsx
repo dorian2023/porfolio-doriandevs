@@ -3,6 +3,9 @@ import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
 import { MotionTransition } from "./transition-component";
 
+import { verProyectos } from "@/data";
+import Link from "next/link";
+
 const Introduction = () => {
     return (
         <div className="z-20 w-full bg-darkBg/60">
@@ -36,13 +39,12 @@ const Introduction = () => {
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
-                    <a href="/projects" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
-                    Ver proyectos
-                    </a>
-                    <a href="/contact"
-                    className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-terciaro border-terciaro rounded-xl hover:shadow-xl hover:shadow-terciaro" >
-                    Contacta conmigo
-                    </a>
+                        {verProyectos.map((item) => (
+                            
+                            <Link href={item.link} className={item.className}>{item.title}</Link>
+
+
+                        ))}
                     </div>
 
               

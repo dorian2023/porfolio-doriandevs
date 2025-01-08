@@ -18,7 +18,23 @@ export const socialNetworks = [
     },
 ];
 
-
+export const verProyectos = [
+    { 
+        id: 1,
+        title:"Proyectos",
+        link: "/portfolio",
+        className:"px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50"
+        
+    },
+    { 
+        id: 2,
+        title:"Contacto",
+        link: "https://wa.me/584129782130?text=Me,%20gustaria%20tus%20servicios.",
+        className:"px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-terciaro border-terciaro rounded-xl hover:shadow-xl hover:shadow-terciaro"
+        
+        
+    },
+];
 export const itemsNavbar = [
     {
         id: 1,
@@ -144,14 +160,14 @@ export const serviceData = [
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web-Catalogo (MUEBLES BELLAGIO)",
+        title: "Web-Catalogo (Mueble Bellagio)",
         image: "/imagen-15.png",
         urlGithub: "#!",
         urlDemo: "https://bellagioprueba.odoo.com/",
     },
     {
         id: 2,
-        title: "Portfolio-Dev (PERSONAL)",
+        title: "Portfolio-Dev (Personal)",
         image: "/imagen-14.png",
         urlGithub: "https://github.com/dorian2023/porfolio-doriandevs",
         urlDemo: "https://doriandevs-portfolio.netlify.app/",
