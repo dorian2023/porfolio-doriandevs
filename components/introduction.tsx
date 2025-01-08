@@ -41,7 +41,11 @@ const Introduction = () => {
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
                         {verProyectos.map((item) => (
                             
-                            <Link href={item.link} className={item.className}>{item.title}</Link>
+                            <Link 
+                                key={item.id}
+                                href={item.link} 
+                                className={item.className}>{item.title}
+                            </Link>
 
 
                         ))}
