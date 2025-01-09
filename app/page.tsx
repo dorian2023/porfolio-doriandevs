@@ -10,6 +10,8 @@ export default function Home() {
     <main>
       <TransitionPage />
       <div className="flex min-h-[100vh] h-full bg-no-repeat">
+   
+
       <AvatarLogo className={`flex justify-start md:justify-start  md:left-10 absolute w-full md:absolute pt-32 pb-0`} />
         
         <Introduction/>

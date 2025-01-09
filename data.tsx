@@ -157,6 +157,27 @@ export const serviceData = [
     },
 ];
 
+
+export const dataCard = [
+    {
+        id: 1,
+        CardTitle: "Web-Catalogo (Mueble Bellagio)",
+        Button: "#!",
+        titleHref: "https://bellagioprueba.odoo.com/",
+        CardDescription: "hola mundo",
+        btnHref: ""
+    },
+    {
+        id: 2,
+        CardTitle: "Web-Catalogo (Mueble Bellagio)",
+        image: "/imagen-15.png",
+        Button: "#!",
+        titleHref: "https://bellagioprueba.odoo.com/",
+        CardDescription: "hola mundo",
+        btnHref: ""
+    },
+]
+
 export const dataPortfolio = [
     {
         id: 1,

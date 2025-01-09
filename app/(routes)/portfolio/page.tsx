@@ -14,6 +14,7 @@ const PortfolioPage = () => {
 
     return (
         <ContainerPage>
+                
             <TransitionPage />
             <MotionTransition position="bottom" >
 
@@ -21,8 +22,8 @@ const PortfolioPage = () => {
                  top-5 mt-0 pb-0`} />
                 
             </MotionTransition>
+            <CircleImage />  
 
-            <CircleImage />
             <div className="flex flex-col justify-center h-full  md:mt-0">
             <MotionTransition position="bottom">
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos {' '} 
@@ -49,7 +50,9 @@ const PortfolioPage = () => {
                 </div>
             </MotionTransition>
             </div>
+            
         </ContainerPage>
+        
     );
 }
 

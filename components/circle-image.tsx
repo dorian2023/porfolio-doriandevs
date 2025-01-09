@@ -5,7 +5,7 @@ import { MotionTransition } from './transition-component';
 
 const CircleImage = () => {
     return (
-        <MotionTransition position='right' className="bottom-0 right-0 hidden md:inline-block md:absolute">
+        <MotionTransition position='right' className="bottom-0 right-0 hidden md:inline-block md:fixed">
             <Image src="/circles.png" width="200" height="200" className="w-full h-full " alt="Circle" />
         </MotionTransition>
 

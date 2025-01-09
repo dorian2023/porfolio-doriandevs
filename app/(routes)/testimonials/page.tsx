@@ -10,13 +10,15 @@ import AvatarPortfolio from "@/components/avatar-portfolio";
 import TransitionPage from "@/components/transition-page";
 import AvatarLogo from "@/components/avatar-logo";
 import { MotionTransition } from "@/components/transition-component";
+import { FeaturedImageGallery } from "@/components/galeria-imagen";
+
 
 const TestimonialsPage = () => {
   return (
     <>
       <TransitionPage />
       <AvatarLogo
-        className={`flex justify-center relative md:w-full md:fixed md:left-1/3 top-48 mt-0 pb-0`}
+        className={`flex justify-center md:justify-end relative md:w-full md:absolute top-48 mt-0 pb-0`}
       />
       <AvatarPortfolio />
       <CircleImage />
@@ -64,6 +66,9 @@ const TestimonialsPage = () => {
             </div>
           </div>
         </MotionTransition>
+      </div>
+      <div className="flex flex-row justify-center h-auto md:h-screen p-4">
+        <FeaturedImageGallery />
       </div>
     </>
   );
