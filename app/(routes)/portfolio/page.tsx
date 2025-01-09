@@ -8,6 +8,7 @@ import PortfolioBox from "@/components/portfolio-box";
 import { TypeAnimation } from "react-type-animation";
 import { MotionTransition } from "@/components/transition-component";
 import AvatarLogo from "@/components/avatar-logo";
+import { FeaturedImageGallery } from "@/components/galeria-imagenes-url";
 
 
 const PortfolioPage = () => {
@@ -24,7 +25,7 @@ const PortfolioPage = () => {
             </MotionTransition>
             <CircleImage />  
 
-            <div className="flex flex-col justify-center h-full  md:mt-0">
+            <div className="flex flex-col justify-center h-full  md:mt-0 md:pb-10">
             <MotionTransition position="bottom">
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos {' '} 
                     <TypeAnimation
@@ -50,7 +51,9 @@ const PortfolioPage = () => {
                 </div>
             </MotionTransition>
             </div>
-            
+            <div className="flex flex-row justify-center h-auto p-4 md:pb-40">
+                <FeaturedImageGallery />
+            </div>
         </ContainerPage>
         
     );

@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Facebook, FacebookIcon, Music2, Music2Icon, Gift, Github, FileSliders } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Facebook, FacebookIcon, Music2, Music2Icon, Gift, Github, FileSliders,  } from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -156,7 +156,142 @@ export const serviceData = [
         description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
     },
 ];
+export const HerramientasData = [
+    {
+        image: <img src="https://i.ibb.co/thNwVBS/html-5.png" alt="html"/>,
+        title: "Html",
+    },
+    {
+        image: <img src="https://i.ibb.co/KjLBFZV/css-3.png" alt="css" />,
+        title: "Css",
+        icon: "",
+    },
+    {
+        image: <img src="https://i.ibb.co/JkMFVzp/javascript.png" alt="javascript" />,
+        title: "JavaScript",
+        icon: "",
+    },
+    {
+        image: <img src="https://i.ibb.co/26h75bG/nodo-js.png" alt="nodejs" />,
+        title: "NodeJs",
+        icon: "",
+    },
+    {
+        image: <img src="https://i.ibb.co/bzZhsjP/reactbueno.png" alt="react"/>,
+        title: "ReactJs",
+        icon: "",
+    },
+    {
+        image: <img src="https://i.ibb.co/5K667vK/pngwing-com.png" alt="tailwindcss"/>,
+        title: "Tailwincss",
+        icon: "",
+    },
+    {
+        image: <img src="https://i.ibb.co/5RnyXpn/pngwing-com-1.png" alt="nextjs"/>,
+        title: "NextJs",
+        icon: "",
+    },
+   
+];
 
+export const GaleriaImagenesUrlIgbb = [
+      {
+        imgelink:
+          "https://i.ibb.co/z6849WZ/sofa-mariana.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/2S7YWr5/marbella2.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/55mRwSp/valentina.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/FqPXySG/manhattan.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/VSc5KfV/dormitorio.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/XWKkG2b/esmeralda2.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/PhxPchV/elegance.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/r0f0YQL/cruz-tunning.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/yYs5CXH/diamante.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/3sPDLpR/karen.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/nRwKPTd/aluminio.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/4VZ0Zmj/infinito.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/pJg5Gfz/comedorx.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/7bFMnPn/esmeralda.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/82XWpTJ/leslie1.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/TP68tGG/moises.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/zrrB96Y/nicole.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/gMWKd6b/leslie2.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/zSKZHGY/paola.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/sPPwDmr/marian2.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/vJk8FVT/marbella.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/Jd7Qdt0/primola.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/z6849WZ/sofa-mariana.jpg",
+      },
+      {
+        imgelink:
+          "https://i.ibb.co/2h8KZBH/Milord.jpg",
+      },
+    ];
 
 export const dataCard = [
     {
