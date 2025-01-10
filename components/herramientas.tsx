@@ -42,7 +42,7 @@ const SliderHerramientas = () => {
 
                             <a
                                 href={item.link}
-                                className="flex items-center justify-center h-auto w-auto cursor-pointerbg-[rgba(65,47,123,0.15)] group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 hover:shadow-xl hover:shadow-terciaro rounded-md"
+                                className="flex items-center text-[8px] justify-center h-[3px] w-[3px] cursor-pointer bg-[rgba(65,47,123,0.15)] group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 hover:shadow-xl hover:shadow-terciaro rounded-md"
                             >
                                 🔴
                             </a>
