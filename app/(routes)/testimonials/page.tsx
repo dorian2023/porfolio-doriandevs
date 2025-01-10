@@ -10,8 +10,6 @@ import AvatarPortfolio from "@/components/avatar-portfolio";
 import TransitionPage from "@/components/transition-page";
 import AvatarLogo from "@/components/avatar-logo";
 import { MotionTransition } from "@/components/transition-component";
-import { FeaturedImageGallery } from "@/components/galeria-imagenes-url";
-
 
 const TestimonialsPage = () => {
   return (
@@ -66,9 +64,6 @@ const TestimonialsPage = () => {
             </div>
           </div>
         </MotionTransition>
-      </div>
-      <div className="flex flex-row justify-center h-auto p-4 md:pb-40">
-        <FeaturedImageGallery />
       </div>
     </>
   );

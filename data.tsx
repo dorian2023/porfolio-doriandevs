@@ -207,6 +207,11 @@ export const HerramientasData = [
         title: "Git",
         link:"https://git-scm.com/"
     },
+    {
+        image: <img src="https://i.ibb.co/tmPxxqh/pngwing-com-3.png" alt="git"/>,
+        title: "Excel",
+        link:"https://www.microsoft.com/es-es/microsoft-365/excel"
+    },
    
 ];
 

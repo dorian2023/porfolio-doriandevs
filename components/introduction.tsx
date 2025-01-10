@@ -8,9 +8,9 @@ import Link from "next/link";
 
 const Introduction = () => {
     return (
-        <div className="z-20 w-full bg-darkBg/60">
+        <div className="z-20 w-[full] h-auto bg-darkBg/60">
          
-            <div className="z-20 grid justify-items-center items-center h-full md:p-6 py-20 md:py-0 md:grid-cols-2">
+            <div className="z-20 grid justify-items-center items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
                 <MotionTransition position="bottom">
                     <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" className="w-2/4 md:w-4/5 h-2/4 md:h-4/5 ml-52 md:ml-0 md:m-0 md:pl-60"/>
                 </MotionTransition>

@@ -37,7 +37,7 @@ const SliderHerramientas = () => {
             >
                 {HerramientasData.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <div className="flex flex-col px-6 py-2 md:px-6 md:py-2  p-4 justify-center md:justify-items-center h-[100px] w-[100px] md:h-[120px] md:w-[120px] md:items-center bg-[rgba(65,47,123,0.15)] sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 hover:border-terciaro border-2 hover:shadow-xl hover:shadow-terciaro rounded-full mb-20">
+                        <div className="flex flex-col items-center px-6 py-2 md:px-6 md:py-2  p-4 justify-center md:justify-items-center h-[100px] w-[100px] md:h-[120px] md:w-[120px] md:items-center bg-[rgba(65,47,123,0.15)] sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 hover:border-terciaro border-2 hover:shadow-xl hover:shadow-terciaro rounded-full mb-20">
                             <div className="p-1 md:p-3">{item.image}</div>
 
                             <a

@@ -51,7 +51,7 @@ const PortfolioPage = () => {
                 </div>
             </MotionTransition>
             </div>
-            <div className="flex flex-row justify-center h-auto p-4 md:pb-40">
+            <div className="flex flex-row justify-center h-auto p-4 pb-40 md:pb-40">
                 <FeaturedImageGallery />
             </div>
         </ContainerPage>
