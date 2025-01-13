@@ -351,10 +351,10 @@ export const dataPortfolio = [
     },
     {
         id: 8,
-        title: "Data Analyst & Inventory Manager",
-        image: "/imagen-15.png",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Galeria-Imagenes (Muebles Bellgio)",
+        image: "/imagen-13.png",
+        urlGithub: "https://github.com/dorian2023/MueblesBellagio-galeria",
+        urlDemo: "https://mueblesbellagio-galeia.netlify.app/",
     },{
         id: 9,
         title: "Data Analyst",
