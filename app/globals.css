@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 html {
-  height: 100%; 
+  height: 100%;
 }
+
 html,
 body {
   height: 100%;
@@ -18,14 +19,17 @@ main {
   height: 100dvh;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: rgb(194,4,28);
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: rgb(194, 4, 28);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.text-shadow-custom {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

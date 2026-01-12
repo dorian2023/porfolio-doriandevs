@@ -1,6 +1,6 @@
 'use client'
 import { dataPortfolio } from "@/data";
-
+import CertificateGrid from "@/components/CertificateGrid.tsx";
 import CircleImage from "@/components/circle-image";
 import TransitionPage from "@/components/transition-page";
 import ContainerPage from "@/components/container-page";
@@ -53,6 +53,9 @@ const PortfolioPage = () => {
             </div>
             <div className="flex flex-row justify-center h-auto p-4 pb-40 md:pb-40">
                 <FeaturedImageGallery />
+            </div>
+            <div>
+                <CertificateGrid />
             </div>
         </ContainerPage>
 

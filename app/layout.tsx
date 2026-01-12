@@ -23,15 +23,35 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // Agregamos suppressHydrationWarning aquí ⬇️
+    <html lang="en" suppressHydrationWarning>
       <body className={`${urbanistSans.className}`}>
-       
-      <CoverParticles/>
+        <CoverParticles/>
         <NavbarBajo />
         <Header />
         {children}
-   
       </body>
     </html>
   );
 }
+
+
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+//   return (
+//     <html lang="en">
+//       <body className={`${urbanistSans.className}`}>
+       
+//       <CoverParticles/>
+//         <NavbarBajo />
+//         <Header />
+//         {children}
+   
+//       </body>
+//     </html>
+//   );
+// }
