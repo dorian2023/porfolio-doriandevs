@@ -15,20 +15,20 @@ const PortfolioPage = () => {
 
     return (
         <ContainerPage>
-                
+
             <TransitionPage />
             <MotionTransition position="bottom" >
 
                 <AvatarLogo className={`flex justify-center relative w-full md:fixed md:left-1/3
                  top-5 mt-0 pb-0`} />
-                
+
             </MotionTransition>
-            <CircleImage />  
+            <CircleImage />
 
             <div className="flex flex-col justify-center h-full  md:mt-0 md:pb-10">
-            <MotionTransition position="bottom">
-                <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos {' '} 
-                    <TypeAnimation
+                <MotionTransition position="bottom">
+                    <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos {' '}
+                        <TypeAnimation
                             sequence={[
                                 'trabajos realizados',
                                 1000,
@@ -40,22 +40,22 @@ const PortfolioPage = () => {
                             repeat={Infinity}
                             className="font-bold text-terciaro"
                         />
-                </h1>
-            </MotionTransition> ;
-            <MotionTransition position="right">
+                    </h1>
+                </MotionTransition> ;
+                <MotionTransition position="right">
 
-                <div className="relative md:z-10 grid grid-cols-2 justify-items-center max-w-5xl gap-6 mx-auto mt-4 sm:grid-cols-2 md:grid-cols-4">
-                    {dataPortfolio.map((data) => (
-                        <PortfolioBox key={data.id} data={data} />
+                    <div className="relative md:z-10 grid grid-cols-2 justify-items-center max-w-5xl gap-6 mx-auto mt-4 sm:grid-cols-2 md:grid-cols-4">
+                        {dataPortfolio.map((data) => (
+                            <PortfolioBox key={data.id} data={data} />
                         ))}
-                </div>
-            </MotionTransition>
+                    </div>
+                </MotionTransition>
             </div>
             <div className="flex flex-row justify-center h-auto p-4 pb-40 md:pb-40">
                 <FeaturedImageGallery />
             </div>
         </ContainerPage>
-        
+
     );
 }
 

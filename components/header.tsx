@@ -37,6 +37,7 @@ const Header = () => {
                                 key={id}
                                 href={src}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className="transition-all duration-300 hover:text-terciaro"
                             >
                                 {logo}

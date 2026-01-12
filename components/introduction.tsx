@@ -9,10 +9,10 @@ import Link from "next/link";
 const Introduction = () => {
     return (
         <div className="z-20 w-[full] h-auto bg-darkBg/60">
-         
+
             <div className="z-20 grid justify-items-center items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
                 <MotionTransition position="bottom">
-                    <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" className="w-2/4 md:w-4/5 h-2/4 md:h-4/5 ml-52 md:ml-0 md:m-0 md:pl-60"/>
+                    <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" className="w-2/4 md:w-4/5 h-2/4 md:h-4/5 ml-40 md:ml-0 md:m-0 md:pl-60" />
                 </MotionTransition>
                 <MotionTransition position="right" className="flex flex-col m-2 md:ml-0 justify-items-center max-w-md">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
@@ -40,10 +40,10 @@ const Introduction = () => {
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
                         {verProyectos.map((item) => (
-                            
-                            <Link 
+
+                            <Link
                                 key={item.id}
-                                href={item.link} 
+                                href={item.link}
                                 className={item.className}>{item.title}
                             </Link>
 
@@ -51,7 +51,7 @@ const Introduction = () => {
                         ))}
                     </div>
 
-              
+
 
                 </MotionTransition>
             </div>
