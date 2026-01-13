@@ -6,43 +6,101 @@ export interface Certificate {
     issuer: string;
     imageUrl: string;      // Miniatura para la tarjeta (puedes usar el mismo link)
     fullImageUrl: string;  // Imagen grande para el modal
+    websiteUrl?: string; // 👈 Agregamos esto (el '?' significa que es opcional)
 }
 
 export const certificados: Certificate[] = [
     {
         id: 1,
-        title: "Full Stack Developer",
-        issuer: "Tu Institución",
-        imageUrl: "https://i.ibb.co/TMcZmLQj/Screenshot-20260112-180235.jpg",
-        fullImageUrl: "https://i.ibb.co/TMcZmLQj/Screenshot-20260112-180235.jpg"
+        title: "FULL STACK DEVELOPER",
+        issuer: "EDTECNICA",
+        imageUrl: "https://i.ibb.co/GvdLXv1p/Sin-t-tulo.png",
+        fullImageUrl: "https://i.ibb.co/S4YVx5sN/PROGRAMACION-FULL-STACK.jpg",
+        websiteUrl: "https://www.edtecnica.com" // 👈 Ejemplo de uso
     },
     {
         id: 2,
-        title: "Full Stack Developer",
-        issuer: "Tu Institución",
-        imageUrl: "https://i.ibb.co/G4RZYR4z/Sin-t-tulo-1-2.png",
-        fullImageUrl: "https://i.ibb.co/G4RZYR4z/Sin-t-tulo-1-2.png"
+        title: "IA EN LA CIBERSEGURIDAD",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/Df1m9sNt/IA-EN-LA-CIBERSEGURIDAD.png",
+        fullImageUrl: "https://i.ibb.co/Df1m9sNt/IA-EN-LA-CIBERSEGURIDAD.png"
     },
     {
         id: 3,
-        title: "Full Stack Developer",
-        issuer: "Tu Institución",
-        imageUrl: "https://i.ibb.co/tu-enlace-aqui.jpg",
-        fullImageUrl: "https://i.ibb.co/tu-enlace-aqui.jpg"
+        title: "CIBERSEGURIDAD",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/cKKffr2B/CIBERSEGURIDAD.png",
+        fullImageUrl: "https://i.ibb.co/cKKffr2B/CIBERSEGURIDAD.png"
     },
     {
         id: 4,
-        title: "Full Stack Developer",
-        issuer: "Tu Institución",
-        imageUrl: "https://i.ibb.co/tu-enlace-aqui.jpg",
-        fullImageUrl: "https://i.ibb.co/tu-enlace-aqui.jpg"
+        title: "SEXTING",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/bjtvqtVQ/SEXTING.png",
+        fullImageUrl: "https://i.ibb.co/bjtvqtVQ/SEXTING.png"
     },
     {
         id: 5,
-        title: "Full Stack Developer",
-        issuer: "Tu Institución",
-        imageUrl: "https://i.ibb.co/tu-enlace-aqui.jpg",
-        fullImageUrl: "https://i.ibb.co/tu-enlace-aqui.jpg"
+        title: "FIRMA ELECTRÓNICA",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/6crtcKtv/FIRMA-ELECTRINICA.png",
+        fullImageUrl: "https://i.ibb.co/6crtcKtv/FIRMA-ELECTRINICA.png"
     },
+    {
+        id: 6,
+        title: "INFORMATICA FORENCE",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/ccHnXx2s/INFORMATICA-FORENCE.png",
+        fullImageUrl: "https://i.ibb.co/ccHnXx2s/INFORMATICA-FORENCE.png"
+    },
+    {
+        id: 7,
+        title: "SEGURIDAD INFORMATICA",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/gM070s6k/SEGURIDAD-INFORMATICA.png",
+        fullImageUrl: "https://i.ibb.co/gM070s6k/SEGURIDAD-INFORMATICA.png"
+    },
+    {
+        id: 8,
+        title: "PREVENCION DEL GROOMING",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/rG825gFD/PREVENCION-DEL-GROOMING.png",
+        fullImageUrl: "https://i.ibb.co/rG825gFD/PREVENCION-DEL-GROOMING.png"
+    },
+    {
+        id: 9,
+        title: "PREVENCION DEL CIBERACOSO",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/jPSjDMCv/PREVENCION-DEL-CIBERACOSO.png",
+        fullImageUrl: "https://i.ibb.co/jPSjDMCv/PREVENCION-DEL-CIBERACOSO.png"
+    },
+    {
+        id: 10,
+        title: "HACKING ÉTICO",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/bjG6HQSj/HACKING-ETICO.png",
+        fullImageUrl: "https://i.ibb.co/bjG6HQSj/HACKING-ETICO.png"
+    },
+    {
+        id: 11,
+        title: "FRAUDE ELECTRÓNICO",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/7tv5GyWw/FRAUDE-ELECTRONICO.png",
+        fullImageUrl: "https://i.ibb.co/7tv5GyWw/FRAUDE-ELECTRONICO.png"
+    },
+    {
+        id: 12,
+        title: "ESTRATEGIAS DE CIBERSEGURIDAD",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/2301LYmV/ESTRATEGIAS-DE-CIBERSEGURIDAD.png",
+        fullImageUrl: "https://i.ibb.co/2301LYmV/ESTRATEGIAS-DE-CIBERSEGURIDAD.png"
+    },
+    {
+        id: 13,
+        title: "BITCOIN 360",
+        issuer: "SUSCERTE",
+        imageUrl: "https://i.ibb.co/Df1mqqjy/BITCOIN-360.png",
+        fullImageUrl: "https://i.ibb.co/Df1mqqjy/BITCOIN-360.png"
+    }
     // Puedes copiar y pegar este bloque para añadir más certificados
 ];

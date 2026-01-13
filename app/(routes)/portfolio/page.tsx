@@ -8,7 +8,6 @@ import PortfolioBox from "@/components/portfolio-box";
 import { TypeAnimation } from "react-type-animation";
 import { MotionTransition } from "@/components/transition-component";
 import AvatarLogo from "@/components/avatar-logo";
-import { FeaturedImageGallery } from "@/components/galeria-imagenes-url";
 
 
 const PortfolioPage = () => {
@@ -51,10 +50,8 @@ const PortfolioPage = () => {
                     </div>
                 </MotionTransition>
             </div>
+
             <div className="flex flex-row justify-center h-auto p-4 pb-40 md:pb-40">
-                <FeaturedImageGallery />
-            </div>
-            <div>
                 <CertificateGrid />
             </div>
         </ContainerPage>

@@ -23,9 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // Agregamos suppressHydrationWarning aquí ⬇️
     <html lang="en" suppressHydrationWarning>
-      <body className={`${urbanistSans.className}`}>
+      {/* Aplicamos suppressHydrationWarning también al body para ignorar 
+          los atributos inyectados por extensiones (como cz-shortcut-listen) */}
+      <body 
+        className={`${urbanistSans.className}`} 
+        suppressHydrationWarning={true}
+      >
         <CoverParticles/>
         <NavbarBajo />
         <Header />
@@ -34,6 +38,24 @@ export default function RootLayout({
     </html>
   );
 }
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+//   return (
+//     // Agregamos suppressHydrationWarning aquí ⬇️
+//     <html lang="en" suppressHydrationWarning>
+//       <body className={`${urbanistSans.className}`}>
+//         <CoverParticles/>
+//         <NavbarBajo />
+//         <Header />
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }
 
 
 
