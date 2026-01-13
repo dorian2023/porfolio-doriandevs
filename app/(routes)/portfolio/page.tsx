@@ -51,6 +51,7 @@ const PortfolioPage = () => {
                 </MotionTransition>
             </div>
 
+
             <div className="flex flex-row justify-center h-auto p-4 pb-40 md:pb-40">
                 <CertificateGrid />
             </div>

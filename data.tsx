@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Facebook, FacebookIcon, Music2, Music2Icon, Gift, Github, FileSliders,  } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Github, FileSliders, } from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -19,20 +19,20 @@ export const socialNetworks = [
 ];
 
 export const verProyectos = [
-    { 
+    {
         id: 1,
-        title:"Proyectos",
+        title: "Proyectos",
         link: "/portfolio",
-        className:"px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50",
-        
+        className: "px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50",
+
     },
-    { 
+    {
         id: 2,
-        title:"Contacto",
+        title: "Contacto",
         link: "https://wa.me/584129782130?text=Me,%20gustaria%20tus%20servicios.",
-        className:"px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-terciaro border-terciaro rounded-xl hover:shadow-xl hover:shadow-terciaro",
-        
-        
+        className: "px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-terciaro border-terciaro rounded-xl hover:shadow-xl hover:shadow-terciaro",
+
+
     },
 ];
 export const itemsNavbar = [
@@ -126,7 +126,7 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop size={30} strokeWidth={2}/>,
+        icon: <Crop size={30} strokeWidth={2} />,
         title: "Branding",
         description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
     },
@@ -141,12 +141,12 @@ export const serviceData = [
         description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
     },
     {
-        icon: <Book size={30} strokeWidth={2}/>,
+        icon: <Book size={30} strokeWidth={2} />,
         title: "Copywriting",
         description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
     },
     {
-        icon: <Rocket size={30} strokeWidth={2}/>,
+        icon: <Rocket size={30} strokeWidth={2} />,
         title: "SEO",
         description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
     },
@@ -158,8 +158,8 @@ export const serviceData = [
 ];
 export const HerramientasData = [
     {
-        image: <img src="https://i.ibb.co/thNwVBS/html-5.png" alt="html"/>,
-        title:"html",
+        image: <img src="https://i.ibb.co/thNwVBS/html-5.png" alt="html" />,
+        title: "html",
         link: "https://developer.mozilla.org/es/docs/Web/HTML"
     },
     {
@@ -178,141 +178,141 @@ export const HerramientasData = [
         link: "https://nodejs.org/docs/latest/api/",
     },
     {
-        image: <img src="https://i.ibb.co/bzZhsjP/reactbueno.png" alt="react"/>,
+        image: <img src="https://i.ibb.co/bzZhsjP/reactbueno.png" alt="react" />,
         title: "ReactJs",
         link: "https://react.dev/",
     },
     {
-        image: <img src="https://i.ibb.co/5K667vK/pngwing-com.png" alt="tailwindcss"/>,
+        image: <img src="https://i.ibb.co/5K667vK/pngwing-com.png" alt="tailwindcss" />,
         title: "Tailwincss",
         link: "https://tailwindcss.com/",
     },
     {
-        image: <img src="https://i.ibb.co/5RnyXpn/pngwing-com-1.png" alt="nextjs"/>,
+        image: <img src="https://i.ibb.co/5RnyXpn/pngwing-com-1.png" alt="nextjs" />,
         title: "NextJs",
         butto: "https://nextjs.org/",
     },
     {
-        image: <img src="https://i.ibb.co/wMQBKH6/pngwing-com-2.png" alt="odoo"/>,
+        image: <img src="https://i.ibb.co/wMQBKH6/pngwing-com-2.png" alt="odoo" />,
         title: "Odoo",
         link: "https://www.odoo.com/es",
     },
     {
-        image: <img src="https://i.ibb.co/Ks9cyx5/logohead.png" alt="odoo"/>,
+        image: <img src="https://i.ibb.co/Ks9cyx5/logohead.png" alt="odoo" />,
         title: "A2 Software",
         link: "http://www.a2.com.ve/",
     },
     {
-        image: <img src="https://i.ibb.co/v3VLCsR/pngwing-com-4.png" alt="git"/>,
+        image: <img src="https://i.ibb.co/v3VLCsR/pngwing-com-4.png" alt="git" />,
         title: "Git",
-        link:"https://git-scm.com/"
+        link: "https://git-scm.com/"
     },
     {
-        image: <img src="https://i.ibb.co/tmPxxqh/pngwing-com-3.png" alt="git"/>,
+        image: <img src="https://i.ibb.co/tmPxxqh/pngwing-com-3.png" alt="git" />,
         title: "Excel",
-        link:"https://www.microsoft.com/es-es/microsoft-365/excel"
+        link: "https://www.microsoft.com/es-es/microsoft-365/excel"
     },
-   
+
 ];
 
 export const GaleriaImagenesUrlIgbb = [
-      {
+    {
         imgelink:
-          "https://i.ibb.co/z6849WZ/sofa-mariana.jpg",
-      },
-      {
+            "https://i.ibb.co/z6849WZ/sofa-mariana.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/2S7YWr5/marbella2.jpg",
-      },
-      {
+            "https://i.ibb.co/2S7YWr5/marbella2.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/55mRwSp/valentina.jpg",
-      },
-      {
+            "https://i.ibb.co/55mRwSp/valentina.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/FqPXySG/manhattan.jpg",
-      },
-      {
+            "https://i.ibb.co/FqPXySG/manhattan.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/VSc5KfV/dormitorio.jpg",
-      },
-      {
+            "https://i.ibb.co/VSc5KfV/dormitorio.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/XWKkG2b/esmeralda2.jpg",
-      },
-      {
+            "https://i.ibb.co/XWKkG2b/esmeralda2.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/PhxPchV/elegance.jpg",
-      },
-      {
+            "https://i.ibb.co/PhxPchV/elegance.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/r0f0YQL/cruz-tunning.jpg",
-      },
-      {
+            "https://i.ibb.co/r0f0YQL/cruz-tunning.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/yYs5CXH/diamante.jpg",
-      },
-      {
+            "https://i.ibb.co/yYs5CXH/diamante.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/3sPDLpR/karen.jpg",
-      },
-      {
+            "https://i.ibb.co/3sPDLpR/karen.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/nRwKPTd/aluminio.jpg",
-      },
-      {
+            "https://i.ibb.co/nRwKPTd/aluminio.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/4VZ0Zmj/infinito.jpg",
-      },
-      {
+            "https://i.ibb.co/4VZ0Zmj/infinito.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/pJg5Gfz/comedorx.jpg",
-      },
-      {
+            "https://i.ibb.co/pJg5Gfz/comedorx.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/7bFMnPn/esmeralda.jpg",
-      },
-      {
+            "https://i.ibb.co/7bFMnPn/esmeralda.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/82XWpTJ/leslie1.jpg",
-      },
-      {
+            "https://i.ibb.co/82XWpTJ/leslie1.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/TP68tGG/moises.jpg",
-      },
-      {
+            "https://i.ibb.co/TP68tGG/moises.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/zrrB96Y/nicole.jpg",
-      },
-      {
+            "https://i.ibb.co/zrrB96Y/nicole.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/gMWKd6b/leslie2.jpg",
-      },
-      {
+            "https://i.ibb.co/gMWKd6b/leslie2.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/zSKZHGY/paola.jpg",
-      },
-      {
+            "https://i.ibb.co/zSKZHGY/paola.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/sPPwDmr/marian2.jpg",
-      },
-      {
+            "https://i.ibb.co/sPPwDmr/marian2.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/vJk8FVT/marbella.jpg",
-      },
-      {
+            "https://i.ibb.co/vJk8FVT/marbella.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/Jd7Qdt0/primola.jpg",
-      },
-      {
+            "https://i.ibb.co/Jd7Qdt0/primola.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/z6849WZ/sofa-mariana.jpg",
-      },
-      {
+            "https://i.ibb.co/z6849WZ/sofa-mariana.jpg",
+    },
+    {
         imgelink:
-          "https://i.ibb.co/2h8KZBH/Milord.jpg",
-      },
-    ];
+            "https://i.ibb.co/2h8KZBH/Milord.jpg",
+    },
+];
 
 export const dataCard = [
     {
@@ -337,10 +337,10 @@ export const dataCard = [
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web-Catalogo (Mueble Bellagio)",
-        image: "/imagen-15.png",
+        title: "Catalogo Web (Muebles Bellagio)",
+        image: "/bellagio-catalogo2.png",
         urlGithub: "#!",
-        urlDemo: "https://bellagioprueba.odoo.com/",
+        urlDemo: "https://mueblesbellagio2.odoo.com/",
     },
     {
         id: 2,
@@ -355,10 +355,10 @@ export const dataPortfolio = [
         image: "/imagen-13.png",
         urlGithub: "https://github.com/dorian2023/MueblesBellagio-galeria",
         urlDemo: "https://mueblesbellagio-galeia.netlify.app/",
-    },{
+    }, {
         id: 9,
         title: "Data Analyst",
-        image: "/imagen-15.png",
+        image: "/bellagio-catalogo2.png",
         urlGithub: "#!",
         urlDemo: "#!",
     },
@@ -380,3 +380,99 @@ export const dataTestimonials = [
         imageUrl: "/profile1.png",
     }
 ];
+
+// export const dataCertificados = [
+//     {
+//         id: 1,
+//         title: "FULL STACK DEVELOPER",
+//         issuer: "EDTECNICA",
+//         imageUrl: "https://i.ibb.co/GvdLXv1p/Sin-t-tulo.png",
+//         fullImageUrl: "https://i.ibb.co/S4YVx5sN/PROGRAMACION-FULL-STACK.jpg",
+//         websiteUrl: "https://www.edtecnica.com" // 👈 Ejemplo de uso
+//     },
+//     {
+//         id: 2,
+//         title: "IA EN LA CIBERSEGURIDAD",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/Df1m9sNt/IA-EN-LA-CIBERSEGURIDAD.png",
+//         fullImageUrl: "https://i.ibb.co/Df1m9sNt/IA-EN-LA-CIBERSEGURIDAD.png"
+//     },
+//     {
+//         id: 3,
+//         title: "CIBERSEGURIDAD",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/cKKffr2B/CIBERSEGURIDAD.png",
+//         fullImageUrl: "https://i.ibb.co/cKKffr2B/CIBERSEGURIDAD.png"
+//     },
+//     {
+//         id: 4,
+//         title: "SEXTING",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/bjtvqtVQ/SEXTING.png",
+//         fullImageUrl: "https://i.ibb.co/bjtvqtVQ/SEXTING.png"
+//     },
+//     {
+//         id: 5,
+//         title: "FIRMA ELECTRÓNICA",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/6crtcKtv/FIRMA-ELECTRINICA.png",
+//         fullImageUrl: "https://i.ibb.co/6crtcKtv/FIRMA-ELECTRINICA.png"
+//     },
+//     {
+//         id: 6,
+//         title: "INFORMATICA FORENCE",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/ccHnXx2s/INFORMATICA-FORENCE.png",
+//         fullImageUrl: "https://i.ibb.co/ccHnXx2s/INFORMATICA-FORENCE.png"
+//     },
+//     {
+//         id: 7,
+//         title: "SEGURIDAD INFORMATICA",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/gM070s6k/SEGURIDAD-INFORMATICA.png",
+//         fullImageUrl: "https://i.ibb.co/gM070s6k/SEGURIDAD-INFORMATICA.png"
+//     },
+//     {
+//         id: 8,
+//         title: "PREVENCION DEL GROOMING",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/rG825gFD/PREVENCION-DEL-GROOMING.png",
+//         fullImageUrl: "https://i.ibb.co/rG825gFD/PREVENCION-DEL-GROOMING.png"
+//     },
+//     {
+//         id: 9,
+//         title: "PREVENCION DEL CIBERACOSO",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/jPSjDMCv/PREVENCION-DEL-CIBERACOSO.png",
+//         fullImageUrl: "https://i.ibb.co/jPSjDMCv/PREVENCION-DEL-CIBERACOSO.png"
+//     },
+//     {
+//         id: 10,
+//         title: "HACKING ÉTICO",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/bjG6HQSj/HACKING-ETICO.png",
+//         fullImageUrl: "https://i.ibb.co/bjG6HQSj/HACKING-ETICO.png"
+//     },
+//     {
+//         id: 11,
+//         title: "FRAUDE ELECTRÓNICO",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/7tv5GyWw/FRAUDE-ELECTRONICO.png",
+//         fullImageUrl: "https://i.ibb.co/7tv5GyWw/FRAUDE-ELECTRONICO.png"
+//     },
+//     {
+//         id: 12,
+//         title: "ESTRATEGIAS DE CIBERSEGURIDAD",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/2301LYmV/ESTRATEGIAS-DE-CIBERSEGURIDAD.png",
+//         fullImageUrl: "https://i.ibb.co/2301LYmV/ESTRATEGIAS-DE-CIBERSEGURIDAD.png"
+//     },
+//     {
+//         id: 13,
+//         title: "BITCOIN 360",
+//         issuer: "SUSCERTE",
+//         imageUrl: "https://i.ibb.co/Df1mqqjy/BITCOIN-360.png",
+//         fullImageUrl: "https://i.ibb.co/Df1mqqjy/BITCOIN-360.png"
+//     }
+//     // Puedes copiar y pegar este bloque para añadir más certificados
+// ];
