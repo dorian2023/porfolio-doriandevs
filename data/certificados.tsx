@@ -121,6 +121,15 @@ export const certificados: Certificate[] = [
         imageUrl: "https://i.ibb.co/bgFVD2dJ/Sin-t-tulo-1.pngg",
         fullImageUrl: "https://i.ibb.co/bgFVD2dJ/Sin-t-tulo-1.png",
         websiteUrl: "https://grow.google/intl/es/ai-opportunity/"
+    },
+    {
+        id: 15,
+        title: "FUNDAMENTOS DE PYTHON",
+        issuer: "SANTANDER OPEN ACADEMY",
+        imageUrl: "https://i.ibb.co/jZbD8SP5/PYTHON.png",
+        fullImageUrl: "https://i.ibb.co/jZbD8SP5/PYTHON.png",
+        websiteUrl: "https://www.santanderopenacademy.com/es/courses-quick-access.html"
     }
+
     // Puedes copiar y pegar este bloque para añadir más certificados
 ];
