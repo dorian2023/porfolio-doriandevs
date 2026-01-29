@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
-import { MotionTransition } from "./transition-component";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
 
 import { verProyectos } from "@/data";
 import Link from "next/link";

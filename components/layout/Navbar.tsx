@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { MotionTransition } from "./transition-component";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
 import { itemsNavbar } from "@/data";
+
 const Navbar = () => {
     const router = usePathname()
 

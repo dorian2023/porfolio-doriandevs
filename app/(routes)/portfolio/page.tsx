@@ -1,13 +1,13 @@
 'use client'
 import { dataPortfolio } from "@/data";
-import CertificateGrid from "@/components/CertificateGrid.tsx";
-import CircleImage from "@/components/circle-image";
-import TransitionPage from "@/components/transition-page";
-import ContainerPage from "@/components/container-page";
-import PortfolioBox from "@/components/portfolio-box";
+import CertificateGrid from "@/components/sections/certificates/CertificateGrid";
+import CircleImage from "@/components/shared/CircleImage";
+import TransitionPage from "@/components/animations/TransitionPage";
+import ContainerPage from "@/components/layout/ContainerPage";
+import PortfolioBox from "@/components/sections/portfolio/PortfolioBox";
 import { TypeAnimation } from "react-type-animation";
-import { MotionTransition } from "@/components/transition-component";
-import AvatarLogo from "@/components/avatar-logo";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
+import AvatarLogo from "@/components/sections/hero/AvatarLogo";
 
 
 const PortfolioPage = () => {

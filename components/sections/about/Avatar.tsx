@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { MotionTransition } from "./transition-component";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
 
 export function Avatar() {
     return (

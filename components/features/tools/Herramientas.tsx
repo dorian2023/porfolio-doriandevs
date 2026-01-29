@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
 import { HerramientasData } from "@/data";
-import { MotionTransition } from "./transition-component";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
 const SliderHerramientas = () => {
     return (
         <MotionTransition position="bottom">

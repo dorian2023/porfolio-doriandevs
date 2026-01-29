@@ -1,10 +1,10 @@
-import AvatarServices from "@/components/avatar-services";
-import CircleImage from "@/components/circle-image";
-import { MotionTransition } from "@/components/transition-component";
-import SliderServices from "@/components/slider-services";
-import TransitionPage from "@/components/transition-page";
+import AvatarServices from "@/components/sections/services/AvatarServices";
+import CircleImage from "@/components/shared/CircleImage";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
+import SliderServices from "@/components/sections/services/SliderServices";
+import TransitionPage from "@/components/animations/TransitionPage";
 import Link from "next/link";
-import AvatarLogo from "@/components/avatar-logo";
+import AvatarLogo from "@/components/sections/hero/AvatarLogo";
 
 const ServicesPage = () => {
     return (

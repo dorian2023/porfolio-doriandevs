@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
-import { CoverParticles } from "@/components/cover-particles";
+import { CoverParticles } from "@/components/sections/hero/HeroParticles";
 
 import "./globals.css";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import NavbarBajo from "@/components/navbar"
-import Header from "@/components/header";
+import NavbarBajo from "@/components/layout/Navbar"
+import Header from "@/components/layout/Header";
 
 const urbanistSans= Urbanist({ subsets: ["latin"] });
 

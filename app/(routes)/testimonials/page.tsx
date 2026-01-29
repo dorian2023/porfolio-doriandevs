@@ -5,11 +5,11 @@ import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { dataTestimonials } from "@/data";
-import CircleImage from "@/components/circle-image";
-import AvatarPortfolio from "@/components/avatar-portfolio";
-import TransitionPage from "@/components/transition-page";
-import AvatarLogo from "@/components/avatar-logo";
-import { MotionTransition } from "@/components/transition-component";
+import CircleImage from "@/components/shared/CircleImage";
+import AvatarPortfolio from "@/components/sections/portfolio/AvatarPortfolio";
+import TransitionPage from "@/components/animations/TransitionPage";
+import AvatarLogo from "@/components/sections/hero/AvatarLogo";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
 
 const TestimonialsPage = () => {
   return (
@@ -26,7 +26,7 @@ const TestimonialsPage = () => {
             Algunos comentarios
             <span className="block font-bold text-terciaro">
               {" "}
-              de nuestros clientes
+              de mis clientes..
             </span>
           </h1>
         </MotionTransition>

@@ -1,8 +1,8 @@
 "use client";
 
-import AvatarLogo from "@/components/avatar-logo";
-import Introduction from "@/components/introduction";
-import TransitionPage from "@/components/transition-page";
+import AvatarLogo from "@/components/sections/hero/AvatarLogo";
+import Introduction from "@/components/sections/hero/Introduction";
+import TransitionPage from "@/components/animations/TransitionPage";
 
 export default function Home() {
   return (

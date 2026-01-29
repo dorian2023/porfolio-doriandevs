@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MotionTransition } from "./transition-component";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
 
 interface AvatarLogoProps {  
     className?: string; // Declarar className como un prop opcional de tipo string  

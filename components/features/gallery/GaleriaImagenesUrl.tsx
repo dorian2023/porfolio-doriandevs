@@ -1,6 +1,6 @@
   import React from "react";
 import { GaleriaImagenesUrlIgbb } from '@/data';
-import { MotionTransition } from "./transition-component";
+import { MotionTransition } from "@/components/animations/TransitionComponent";
 import { TypeAnimation } from "react-type-animation";
 export function FeaturedImageGallery() {
   

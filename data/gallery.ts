@@ -1,0 +1,28 @@
+import type { GalleryImage } from "@/types";
+
+export const GaleriaImagenesUrlIgbb: GalleryImage[] = [
+    { imgelink: "https://i.ibb.co/z6849WZ/sofa-mariana.jpg" },
+    { imgelink: "https://i.ibb.co/2S7YWr5/marbella2.jpg" },
+    { imgelink: "https://i.ibb.co/55mRwSp/valentina.jpg" },
+    { imgelink: "https://i.ibb.co/FqPXySG/manhattan.jpg" },
+    { imgelink: "https://i.ibb.co/VSc5KfV/dormitorio.jpg" },
+    { imgelink: "https://i.ibb.co/XWKkG2b/esmeralda2.jpg" },
+    { imgelink: "https://i.ibb.co/PhxPchV/elegance.jpg" },
+    { imgelink: "https://i.ibb.co/r0f0YQL/cruz-tunning.jpg" },
+    { imgelink: "https://i.ibb.co/yYs5CXH/diamante.jpg" },
+    { imgelink: "https://i.ibb.co/3sPDLpR/karen.jpg" },
+    { imgelink: "https://i.ibb.co/nRwKPTd/aluminio.jpg" },
+    { imgelink: "https://i.ibb.co/4VZ0Zmj/infinito.jpg" },
+    { imgelink: "https://i.ibb.co/pJg5Gfz/comedorx.jpg" },
+    { imgelink: "https://i.ibb.co/7bFMnPn/esmeralda.jpg" },
+    { imgelink: "https://i.ibb.co/82XWpTJ/leslie1.jpg" },
+    { imgelink: "https://i.ibb.co/TP68tGG/moises.jpg" },
+    { imgelink: "https://i.ibb.co/zrrB96Y/nicole.jpg" },
+    { imgelink: "https://i.ibb.co/gMWKd6b/leslie2.jpg" },
+    { imgelink: "https://i.ibb.co/zSKZHGY/paola.jpg" },
+    { imgelink: "https://i.ibb.co/sPPwDmr/marian2.jpg" },
+    { imgelink: "https://i.ibb.co/vJk8FVT/marbella.jpg" },
+    { imgelink: "https://i.ibb.co/Jd7Qdt0/primola.jpg" },
+    { imgelink: "https://i.ibb.co/z6849WZ/sofa-mariana.jpg" },
+    { imgelink: "https://i.ibb.co/2h8KZBH/Milord.jpg" },
+];
