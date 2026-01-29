@@ -14,9 +14,8 @@ body {
 }
 
 main {
-  background: #0b0b0e;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,

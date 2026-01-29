@@ -1,13 +1,18 @@
-"use client"
+"use client";
 
 import Image from "next/image";
-
-import { MotionTransition } from "@/components/animations/TransitionComponent";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 export function Avatar() {
     return (
-        <MotionTransition position="bottom" className="bottom-0 right-0 hidden md:inline-block md:fixed ">
-            <Image src="/avatar-1.png" width="350" height="350" className="w-full h-full" alt="Particles" />
-        </MotionTransition>
+        <FadeIn direction="up" className="pointer-events-none hidden lg:block lg:fixed bottom-0 right-0 z-10">
+            <Image
+                src="/avatar-1.png"
+                width={400}
+                height={400}
+                className="w-full h-auto opacity-80"
+                alt="Avatar Decorativo"
+            />
+        </FadeIn>
     )
 }

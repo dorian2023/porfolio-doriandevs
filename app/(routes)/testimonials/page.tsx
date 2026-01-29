@@ -1,71 +1,71 @@
 "use client";
 
-import Image from "next/image";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { dataTestimonials } from "@/data";
-import CircleImage from "@/components/shared/CircleImage";
-import AvatarPortfolio from "@/components/sections/portfolio/AvatarPortfolio";
 import TransitionPage from "@/components/animations/TransitionPage";
+import ContainerPage from "@/components/layout/ContainerPage";
 import AvatarLogo from "@/components/sections/hero/AvatarLogo";
-import { MotionTransition } from "@/components/animations/TransitionComponent";
+import { FadeIn } from "@/components/animations/FadeIn";
+import Card from "@/components/ui/Card";
+import Image from "next/image";
 
 const TestimonialsPage = () => {
   return (
-    <>
+    <main className="relative bg-[#09070f] min-h-screen">
       <TransitionPage />
-      <AvatarLogo
-        className={`flex justify-center md:justify-end relative md:w-full md:absolute top-48 mt-0 pb-0`}
-      />
-      <AvatarPortfolio />
-      <CircleImage />
-      <div className="flex flex-col justify-center h-screen gap-5">
-        <MotionTransition position="bottom">
-          <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
-            Algunos comentarios
-            <span className="block font-bold text-terciaro">
-              {" "}
-              de mis clientes..
-            </span>
-          </h1>
-        </MotionTransition>
-        <MotionTransition position="right">
-          <div className="flex items-center justify-center">
-            <div>
+
+      <ContainerPage>
+        <div className="relative pt-20 md:pt-32 space-y-12 pb-40 md:pb-20 px-6">
+          <AvatarLogo className="absolute top-8 left-4 md:left-12 pointer-events-none" />
+
+          <FadeIn direction="up">
+            <h1 className="text-3xl md:text-6xl font-bold text-center text-white">
+              Opiniones de <span className="text-terciaro">Clientes</span>
+            </h1>
+            <p className="text-center text-gray-400 mt-4 max-w-2xl mx-auto">
+              La satisfacción de mis clientes es el mejor reflejo de la calidad de mi trabajo.
+            </p>
+          </FadeIn>
+
+          <FadeIn direction="up" delay={0.2}>
+            <div className="flex items-center justify-center">
               <Swiper
                 breakpoints={{
-                  320: {
-                    slidesPerView: 1,
-                    spaceBetween: 15,
-                  },
+                  320: { slidesPerView: 1, spaceBetween: 15 },
+                  768: { slidesPerView: 2, spaceBetween: 30 },
                 }}
-                freeMode={true}
-                pagination={{
-                  clickable: true,
-                }}
+                pagination={{ clickable: true }}
                 modules={[Pagination]}
-                className="h-[280px] md:h-[300px] w-[270px] md:w-[550px] mb-5 md:mb-0"
+                className="w-full max-w-5xl pb-16"
               >
                 {dataTestimonials.map(({ id, name, description, imageUrl }) => (
                   <SwiperSlide key={id}>
-                    <Image
-                      src={imageUrl}
-                      alt={name}
-                      width="100"
-                      height="100"
-                      className="mx-auto rounded-full"
-                    />
-                    <h4 className="text-center">{name}</h4>
-                    <div className="mt-5 text-center">{description}</div>
+                    <Card className="h-full bg-secondary-900/40 border-white/5 p-8 flex flex-col items-center text-center space-y-6">
+                      <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-terciaro/30 p-1">
+                        <Image
+                          src={imageUrl}
+                          alt={name}
+                          fill
+                          className="object-cover rounded-full"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <h4 className="text-xl font-bold text-white">{name}</h4>
+                        <div className="w-10 h-1 bg-terciaro mx-auto rounded-full" />
+                      </div>
+                      <p className="text-gray-400 italic leading-relaxed">
+                        "{description}"
+                      </p>
+                    </Card>
                   </SwiperSlide>
                 ))}
               </Swiper>
             </div>
-          </div>
-        </MotionTransition>
-      </div>
-    </>
+          </FadeIn>
+        </div>
+      </ContainerPage>
+    </main>
   );
 };
 

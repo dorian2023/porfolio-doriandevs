@@ -1,17 +1,27 @@
-import Image from "next/image";
-import { MotionTransition } from "@/components/animations/TransitionComponent";
+"use client";
 
-interface AvatarLogoProps {  
-    className?: string; // Declarar className como un prop opcional de tipo string  
-}  
+import Image from "next/image";
+import { FadeIn } from "@/components/animations/FadeIn";
+import { cn } from "@/lib/utils";
+
+interface AvatarLogoProps {
+    className?: string;
+}
 
 const AvatarLogo = ({ className = '' }: AvatarLogoProps) => {
     return (
-        <>
-        <MotionTransition position='right' className={`${className}`}>
-            <Image src="/DAGS.png" width="400" height="400" className="w-52 md:w-[230px] md:h-[230px] " alt="Logo"/>
-        </MotionTransition>
-        </>
+        <FadeIn direction="right" className={cn("z-30", className)}>
+            <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-terciaro to-primary-500 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <Image
+                    src="/DAGS.png"
+                    width="400"
+                    height="400"
+                    className="relative w-52 md:w-[230px] md:h-auto transition-transform duration-500 group-hover:scale-105"
+                    alt="Logo"
+                />
+            </div>
+        </FadeIn>
     );
 }
 

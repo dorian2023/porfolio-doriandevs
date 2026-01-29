@@ -4,51 +4,40 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 
 import { serviceData } from '@/data';
-import { MotionTransition } from '@/components/animations/TransitionComponent';
+
 
 const SliderServices = () => {
     return (
-        <MotionTransition position="bottom">
+        <div className="w-full">
             <Swiper
                 breakpoints={{
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 15
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 15
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 15
-                    }
+                    320: { slidesPerView: 1, spaceBetween: 15 },
+                    768: { slidesPerView: 2, spaceBetween: 20 },
+                    1024: { slidesPerView: 3, spaceBetween: 20 }
                 }}
-                freeMode={true}
-                pagination={{
-                    clickable: true,
-
-                }}
+                pagination={{ clickable: true }}
                 modules={[Pagination]}
-                className="h-[230px] md:h-[340px] w-[270px] md:w-[550px]"
+                className="w-full pb-12"
             >
-
                 {serviceData.map((item, index) => (
-
-                    <SwiperSlide key={index} >
-                        <div className="flex px-6 py-2 h-auto md:h-[290px] rounded-lg cursor-pointer bg-[rgba(65,47,123,0.15)] sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 hover:border-terciaro border-2 hover:shadow-xl hover:shadow-terciaro">
-                            <div className="mb-4 text-4xl text-terciaro">{item.icon}</div>
-                            <div>
-                                <h3 className="mb-4 text-lg">{item.title}</h3>
-                                <p className="text-sm">{item.description}</p>
+                    <SwiperSlide key={index}>
+                        <div className="bg-secondary-900/60 border border-white/5 p-6 rounded-2xl flex flex-col gap-4 group hover:border-terciaro/50 transition-all duration-500 hover:shadow-2xl hover:shadow-terciaro/10 min-h-[250px]">
+                            <div className="text-4xl text-terciaro group-hover:scale-110 transition-transform duration-300">
+                                {item.icon}
+                            </div>
+                            <div className="space-y-2">
+                                <h3 className="text-xl font-bold text-white group-hover:text-terciaro transition-colors">
+                                    {item.title}
+                                </h3>
+                                <p className="text-gray-400 text-sm leading-relaxed">
+                                    {item.description}
+                                </p>
                             </div>
                         </div>
                     </SwiperSlide>
-
                 ))}
-
             </Swiper>
-        </MotionTransition>
+        </div>
     );
 }
 export default SliderServices;

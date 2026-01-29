@@ -1,59 +1,75 @@
-"use client"
+"use client";
+
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
-import { MotionTransition } from "@/components/animations/TransitionComponent";
-
+import { FadeIn } from "@/components/animations/FadeIn";
+import Button from "@/components/ui/Button";
 import { verProyectos } from "@/data";
 import Link from "next/link";
 
 const Introduction = () => {
     return (
-        <div className="z-20 w-[full] h-auto bg-darkBg/60">
+        <div className="z-20 w-full h-full bg-darkBg/60 backdrop-blur-sm">
+            <div className="z-20 grid md:grid-cols-2 items-center justify-items-center h-full max-w-7xl mx-auto p-6 py-20 md:py-0">
 
-            <div className="z-20 grid justify-items-center items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
-                <MotionTransition position="bottom">
-                    <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" className="w-2/4 md:w-4/5 h-2/4 md:h-4/5 ml-40 md:ml-0 md:m-0 md:pl-60" />
-                </MotionTransition>
-                <MotionTransition position="right" className="flex flex-col m-2 md:ml-0 justify-items-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
-                        <TypeAnimation
-                            sequence={[
-                                'puedes programarlo',
-                                1000,
-                                'puedes optimizarlo',
-                                1000,
-                                'puedes implementarlo',
-                                1000,
-                                'puedes desarrollarlo',
-                                1000
-                            ]}
-                            wrapper="span"
-                            speed={10}
-                            repeat={Infinity}
-                            className="font-bold text-terciaro"
-                        />
-                    </h1>
+                {/* Image Section */}
+                <FadeIn direction="right" className="relative group">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-terciaro to-primary-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                    <Image
+                        src="/home-4.png"
+                        priority
+                        width="800"
+                        height="800"
+                        alt="Avatar"
+                        className="relative w-2/3 md:w-full h-auto mx-auto md:ml-0 drop-shadow-2xl"
+                    />
+                </FadeIn>
 
-                    <p className="mx-auto mb-2 text-base text-center md:text-left md:text-xl md:mx-0 md:mb-8">
-                        Apasionado desarrollador frontend y administrador de datos con una sólida experiencia en el diseño y desarrollo de aplicaciones web & mobile atractivas y funcionales. Ademas de implementar y mantener el sistema de gestión empresarial en donde manejo aspectos clave como la contabilidad, la facturación y el control de inventario.
-                    </p>
+                {/* Content Section */}
+                <div className="flex flex-col items-center md:items-start max-w-xl text-center md:text-left space-y-6 md:space-y-8">
+                    <FadeIn direction="up">
+                        <h1 className="text-3xl md:text-6xl font-bold leading-tight tracking-tight text-white">
+                            Si puedes pensarlo, <br />
+                            <TypeAnimation
+                                sequence={[
+                                    'puedes programarlo',
+                                    2000,
+                                    'puedes optimizarlo',
+                                    2000,
+                                    'puedes implementarlo',
+                                    2000,
+                                    'puedes desarrollarlo',
+                                    2000
+                                ]}
+                                wrapper="span"
+                                speed={10}
+                                repeat={Infinity}
+                                className="text-terciaro"
+                            />
+                        </h1>
+                    </FadeIn>
 
-                    <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
+                    <FadeIn direction="up" delay={0.2}>
+                        <p className="text-base md:text-xl text-gray-300 leading-relaxed">
+                            Apasionado desarrollador frontend y administrador de datos con una sólida experiencia en el
+                            <span className="text-white font-medium"> diseño y desarrollo de aplicaciones web & mobile</span> atractivas y funcionales.
+                            Experto en optimización de sistemas de gestión empresarial y control de datos.
+                        </p>
+                    </FadeIn>
+
+                    <FadeIn direction="up" delay={0.4} className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6 w-full">
                         {verProyectos.map((item) => (
-
-                            <Link
-                                key={item.id}
-                                href={item.link}
-                                className={item.className}>{item.title}
+                            <Link key={item.id} href={item.link} passHref>
+                                <Button
+                                    variant={item.id === 1 ? "tertiary" : "outline"}
+                                    className="min-w-[160px]"
+                                >
+                                    {item.title}
+                                </Button>
                             </Link>
-
-
                         ))}
-                    </div>
-
-
-
-                </MotionTransition>
+                    </FadeIn>
+                </div>
             </div>
         </div>
     );

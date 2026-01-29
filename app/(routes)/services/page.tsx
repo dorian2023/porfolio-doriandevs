@@ -1,37 +1,50 @@
-import AvatarServices from "@/components/sections/services/AvatarServices";
-import CircleImage from "@/components/shared/CircleImage";
-import { MotionTransition } from "@/components/animations/TransitionComponent";
-import SliderServices from "@/components/sections/services/SliderServices";
+"use client";
+
 import TransitionPage from "@/components/animations/TransitionPage";
-import Link from "next/link";
+import ContainerPage from "@/components/layout/ContainerPage";
+import SliderServices from "@/components/sections/services/SliderServices";
 import AvatarLogo from "@/components/sections/hero/AvatarLogo";
+import { FadeIn } from "@/components/animations/FadeIn";
+import Button from "@/components/ui/Button";
+import Link from "next/link";
+import { Mail } from "lucide-react";
 
 const ServicesPage = () => {
     return (
-        <>
+        <main className="relative bg-[#09070f] min-h-screen">
             <TransitionPage />
-            <CircleImage />
-            <AvatarServices />
-            <AvatarLogo className="flex justify-center relative pt-40 md:pt-0 md:w-full md:fixed md:right-1/3 top-5 pb-0" />
-            <div className="grid items-center justify-center gap-3  max-w-5xl mx-auto md:h-screen md:grid-cols-2 pr-4 pl-4 pb-48 md:p-0 md:pt-0">
-                <div className="max-w-[450px] md:mt-0">
 
-                    <MotionTransition position="right" className="mt-8">
-                        <div className="flex flex-col items-center">
-                            <h1 className="text-4xl leading-tight text-center md:text-left md:text-4xl md:mb-5">Mis <span className="font-bold text-terciaro"> servicios.</span></h1>
-                            <p className="mb-3 text-sm md:text-xl text-center md:text-left text-gray-300">Desarrollo web frontend especializado en la creación de sitios web y aplicaciones atractivas y funcionales. Utilizando las últimas tecnologías, como HTML, CSS, JavaScript, React, Tailwind CSS, diseño interfaces de usuario intuitivas y responsivas que reflejan la identidad de marca de mis clientes y mejoran su presencia en línea.</p>
-                            <Link href="https://wa.me/584129782130?text=Me,%20gustaria%20tus%20servicios." target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-lg text-center bg-terciaro hover:bg-terciaro/65 hover:shadow-lg hover:shadow-terciaro">Contacta conmigo</Link>
-                        </div>
-                    </MotionTransition>
+            <ContainerPage>
+                <div className="relative pt-20 md:pt-32 space-y-12 pb-40 md:pb-20 px-6">
+                    <AvatarLogo className="absolute top-8 left-4 md:left-12 pointer-events-none" />
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <FadeIn direction="right" className="space-y-8">
+                            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+                                Mis <span className="text-terciaro font-extrabold">Servicios</span>
+                            </h1>
+                            <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-lg">
+                                Desarrollo web frontend especializado en la creación de sitios web y aplicaciones atractivas y funcionales.
+                                Utilizo tecnologías de vanguardia para diseñar interfaces intuitivas que potencian el crecimiento de tu negocio.
+                            </p>
+                            <div className="pt-4">
+                                <Link href="/contact">
+                                    <Button variant="tertiary" size="lg" className="rounded-full shadow-lg shadow-terciaro/20">
+                                        Explorar Proyectos <Mail className="ml-2 w-5 h-5" />
+                                    </Button>
+                                </Link>
+                            </div>
+                        </FadeIn>
+
+                        <FadeIn direction="left" delay={0.2}>
+                            <div className="bg-secondary-900/40 border border-white/5 backdrop-blur-md rounded-3xl p-4 md:p-8">
+                                <SliderServices />
+                            </div>
+                        </FadeIn>
+                    </div>
                 </div>
-
-                {/* SLIDER */}
-                <MotionTransition position="bottom" className="mt-8 md:mb-0">
-                    <SliderServices />
-                </MotionTransition>
-            </div>
-
-        </>
+            </ContainerPage>
+        </main>
     );
 }
 

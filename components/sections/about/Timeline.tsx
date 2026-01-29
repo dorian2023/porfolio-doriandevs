@@ -1,37 +1,48 @@
-"use client"
+"use client";
+
 import { dataAboutPage } from "@/data";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 const TimeLine = () => {
     return (
-        <div className="flex flex-col justify-center divide-y divide-slate-200">
-            <div className="w-full max-w-3xl mx-auto md:pb-40 md:pt-20">
-                <div className="-my-6">
-                    {dataAboutPage.map((data) => (
-                        <div key={data.id} className="relative py-6 pl-8 sm:pl-32 group">
-                            <h3 className="mb-1 text-2xl font-bold sm:mb-0">{data.title}</h3>
-                            <div className="flex flex-col sm:flex-row items-start mb-1 
-                                        group-last:before:hidden before:absolute 
-                                        before:left-2 sm:before:left-0 before:h-full
-                                        before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] 
-                                        before:self-start before:-translate-x-1/2 
-                                        before:translate-y-3 after:absolute after:left-2 
-                                        sm:after:left-0 after:w-2 after:h-2 after:bg-secondary
-                                        after:border-4 after:box-content after:border-slate-50 
-                                        after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 
-                                        after:translate-y-1.5">
-                                <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-slate-100 bg-terciaro rounded-full">{data.date}</time>
-                                <div className="group">  
-                                <div className="text-xl font-bold text-terciaro group-hover:text-shadow-xl">  
-                                    {data.subtitle}  
-                                </div>  
-                            </div> 
+        <section className="relative max-w-4xl mx-auto py-12 px-6">
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-terciaro/30 to-transparent -translate-x-1/2" />
+
+            <div className="space-y-16">
+                {dataAboutPage.map((data, index) => (
+                    <FadeIn
+                        key={data.id}
+                        direction={index % 2 === 0 ? "right" : "left"}
+                        delay={index * 0.1}
+                    >
+                        <div className={`relative flex items-center justify-between md:justify-normal group ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                            }`}>
+                            {/* Dot */}
+                            <div className="absolute left-2 md:left-1/2 w-4 h-4 rounded-full bg-terciaro border-4 border-[#09070f] shadow-[0_0_10px_rgba(194,4,28,0.5)] -translate-x-1/2 z-10 transition-transform duration-300 group-hover:scale-150" />
+
+                            {/* Content */}
+                            <div className={`w-full md:w-[45%] ml-12 md:ml-0 ${index % 2 === 0 ? "md:text-left" : "md:text-right"
+                                }`}>
+                                <div className="bg-secondary-900/40 border border-white/5 backdrop-blur-md p-6 rounded-3xl group-hover:border-terciaro/30 transition-all shadow-xl">
+                                    <span className="inline-block px-3 py-1 rounded-full bg-terciaro/10 text-terciaro text-xs font-bold mb-4 uppercase tracking-wider">
+                                        {data.date}
+                                    </span>
+                                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                                        {data.title}
+                                    </h3>
+                                    <h4 className="text-terciaro font-medium mb-4">
+                                        {data.subtitle}
+                                    </h4>
+                                    <p className="text-gray-400 text-sm leading-relaxed">
+                                        {data.description}
+                                    </p>
+                                </div>
                             </div>
-                            <div className="text-slate-300 max-w-md">{data.description}</div>
                         </div>
-                    ))}
-                </div>
+                    </FadeIn>
+                ))}
             </div>
-        </div>
+        </section>
     );
 }
 

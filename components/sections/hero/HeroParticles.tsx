@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 
-export const CoverParticles = () => {
+const HeroParticles = () => {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export const CoverParticles = () => {
 
     return (
         init &&
-        <div className="w-[0px]">
+        <div className="absolute inset-0 -z-10">
             <Particles
                 id="tsparticles"
                 options={{
@@ -88,3 +88,5 @@ export const CoverParticles = () => {
         </div>
     )
 };
+
+export default HeroParticles;

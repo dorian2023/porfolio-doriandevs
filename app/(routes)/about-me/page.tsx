@@ -1,43 +1,44 @@
-"use client"
+"use client";
 
 import { Avatar } from "@/components/sections/about/Avatar";
 import AvatarLogo from "@/components/sections/hero/AvatarLogo";
 import ContainerPage from "@/components/layout/ContainerPage";
 import CounterServices from "@/components/sections/about/CounterServices";
-import SliderHerramientas from "@/components/features/tools/Herramientas";
+import SkillsGrid from "@/components/sections/about/SkillsGrid";
 import TimeLine from "@/components/sections/about/Timeline";
 import TransitionPage from "@/components/animations/TransitionPage";
-
+import { FadeIn } from "@/components/animations/FadeIn";
 
 const AboutMePage = () => {
     return (
-        <>
+        <main className="relative bg-[#09070f] min-h-screen">
             <TransitionPage />
 
             <ContainerPage>
-                <AvatarLogo className={`flex justify-center md:justify-start  md:left-10 relative w-full md:absolute mt-10 pb-0`} />
-                <Avatar />
-                <h1 className="text-2xl leading-tight text-center md:text-center md:text-5xl mt-10">
-                    Toda mi{' '}
-                    <span className="font-bold text-terciaro">
-                        trayectoria profesional
-                    </span>
-                </h1>
+                <div className="relative pt-20 md:pt-32 space-y-20">
+                    <AvatarLogo className="absolute top-8 left-4 md:left-12 pointer-events-none" />
 
-                <CounterServices />
+                    <section className="space-y-12">
+                        <FadeIn direction="up">
+                            <h1 className="text-3xl md:text-6xl font-bold text-center text-white">
+                                Toda mi{' '}
+                                <span className="text-terciaro">trayectoria profesional</span>
+                            </h1>
+                        </FadeIn>
 
-                <TimeLine />
+                        <Avatar />
+                        <CounterServices />
+                    </section>
 
+                    <TimeLine />
 
+                    <SkillsGrid />
 
-
+                    {/* Spacer for flow */}
+                    <div className="h-20" />
+                </div>
             </ContainerPage>
-            <div className="pb-80">
-
-                <SliderHerramientas />
-            </div>
-
-        </>
+        </main>
     );
 }
 

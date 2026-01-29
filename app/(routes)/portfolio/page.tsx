@@ -1,62 +1,45 @@
-'use client'
-import { dataPortfolio } from "@/data";
-import CertificateGrid from "@/components/sections/certificates/CertificateGrid";
-import CircleImage from "@/components/shared/CircleImage";
+"use client";
+
 import TransitionPage from "@/components/animations/TransitionPage";
 import ContainerPage from "@/components/layout/ContainerPage";
-import PortfolioBox from "@/components/sections/portfolio/PortfolioBox";
-import { TypeAnimation } from "react-type-animation";
-import { MotionTransition } from "@/components/animations/TransitionComponent";
 import AvatarLogo from "@/components/sections/hero/AvatarLogo";
-
+import ProjectList from "@/components/sections/portfolio/ProjectList";
+import CertificateGrid from "@/components/sections/certificates/CertificateGrid";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 const PortfolioPage = () => {
-
     return (
-        <ContainerPage>
-
+        <main className="relative bg-[#09070f] min-h-screen">
             <TransitionPage />
-            <MotionTransition position="bottom" >
 
-                <AvatarLogo className={`flex justify-center relative w-full md:fixed md:left-1/3
-                 top-5 mt-0 pb-0`} />
+            <ContainerPage>
+                <div className="relative pt-20 md:pt-32 space-y-20">
+                    <AvatarLogo className="absolute top-8 left-4 md:left-12 pointer-events-none" />
 
-            </MotionTransition>
-            <CircleImage />
+                    <div className="space-y-12">
+                        <FadeIn direction="up">
+                            <h1 className="text-3xl md:text-6xl font-bold text-center text-white">
+                                Mi <span className="text-terciaro">Portfolio</span>
+                            </h1>
+                        </FadeIn>
 
-            <div className="flex flex-col justify-center h-full  md:mt-0 md:pb-10">
-                <MotionTransition position="bottom">
-                    <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos {' '}
-                        <TypeAnimation
-                            sequence={[
-                                'trabajos realizados',
-                                1000,
-                                'trabajos realizados..',
-                                1000,
-                            ]}
-                            wrapper="span"
-                            speed={10}
-                            repeat={Infinity}
-                            className="font-bold text-terciaro"
-                        />
-                    </h1>
-                </MotionTransition> ;
-                <MotionTransition position="right">
+                        {/* Projects Section */}
+                        <ProjectList />
 
-                    <div className="relative md:z-10 grid grid-cols-2 justify-items-center max-w-5xl gap-6 mx-auto mt-4 sm:grid-cols-2 md:grid-cols-4">
-                        {dataPortfolio.map((data) => (
-                            <PortfolioBox key={data.id} data={data} />
-                        ))}
+                        {/* Certificates Section */}
+                        <FadeIn direction="up" delay={0.2} className="pt-20">
+                            <h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-10">
+                                Certificaciones y <span className="text-terciaro">Logros</span>
+                            </h2>
+                            <CertificateGrid />
+                        </FadeIn>
                     </div>
-                </MotionTransition>
-            </div>
 
-
-            <div className="flex flex-row justify-center h-auto p-4 pb-40 md:pb-40">
-                <CertificateGrid />
-            </div>
-        </ContainerPage>
-
+                    {/* Spacer for flow */}
+                    <div className="h-20" />
+                </div>
+            </ContainerPage>
+        </main>
     );
 }
 

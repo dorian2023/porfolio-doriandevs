@@ -1,37 +1,43 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Speech, Mail } from "lucide-react";
 import type { NavItem, ButtonLink } from "@/types";
 
 export const itemsNavbar: NavItem[] = [
     {
         id: 1,
         title: "Home",
-        icon: <HomeIcon size={ 25} color = "#fff" strokeWidth = { 1} />,
-    link: "/",
-  },
-{
-    id: 2,
+        icon: <HomeIcon size={25} color="#fff" strokeWidth={1} />,
+        link: "/",
+    },
+    {
+        id: 2,
         title: "User",
-            icon: <UserRound size={ 25 } color = "#fff" strokeWidth = { 1} />,
-                link: "/about-me",
-  },
-{
-    id: 3,
+        icon: <UserRound size={25} color="#fff" strokeWidth={1} />,
+        link: "/about-me",
+    },
+    {
+        id: 3,
         title: "Book",
-            icon: <BookText size={ 25 } color = "#fff" strokeWidth = { 1} />,
-                link: "/services",
-  },
-{
-    id: 4,
+        icon: <BookText size={25} color="#fff" strokeWidth={1} />,
+        link: "/services",
+    },
+    {
+        id: 4,
         title: "Target",
-            icon: <CodeSquare size={ 25 } color = "#fff" strokeWidth = { 1} />,
-                link: "/portfolio",
-  },
-{
-    id: 5,
-        title: "Testomionials",
-            icon: <Speech size={ 25 } color = "#fff" strokeWidth = { 1} />,
-                link: "/testimonials",
-  },
+        icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
+        link: "/portfolio",
+    },
+    {
+        id: 5,
+        title: "Testimonials",
+        icon: <Speech size={25} color="#fff" strokeWidth={1} />,
+        link: "/testimonials",
+    },
+    {
+        id: 6,
+        title: "Contact",
+        icon: <Mail size={25} color="#fff" strokeWidth={1} />,
+        link: "/contact",
+    },
 ];
 
 export const verProyectos: ButtonLink[] = [

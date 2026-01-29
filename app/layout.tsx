@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
-import { CoverParticles } from "@/components/sections/hero/HeroParticles";
+import HeroParticles from "@/components/sections/hero/HeroParticles";
+import Navbar from "@/components/layout/Navbar";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 import "./globals.css";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import NavbarBajo from "@/components/layout/Navbar"
-import Header from "@/components/layout/Header";
-
-const urbanistSans= Urbanist({ subsets: ["latin"] });
+const urbanistSans = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DorianDevelopers & Design",
+  title: "Dorian Developers & Design",
   description: "Creativity, innovation and technical skills in web development and design.",
 };
 
@@ -23,57 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      {/* Aplicamos suppressHydrationWarning también al body para ignorar 
-          los atributos inyectados por extensiones (como cz-shortcut-listen) */}
-      <body 
-        className={`${urbanistSans.className}`} 
-        suppressHydrationWarning={true}
+    <html lang="es" suppressHydrationWarning>
+      <body
+        className={`${urbanistSans.className} bg-[#09070f] text-white antialiased`}
+        suppressHydrationWarning
       >
-        <CoverParticles/>
-        <NavbarBajo />
+        <HeroParticles />
         <Header />
-        {children}
+        <main>{children}</main>
+        <Footer />
+        <Navbar />
       </body>
     </html>
   );
 }
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     // Agregamos suppressHydrationWarning aquí ⬇️
-//     <html lang="en" suppressHydrationWarning>
-//       <body className={`${urbanistSans.className}`}>
-//         <CoverParticles/>
-//         <NavbarBajo />
-//         <Header />
-//         {children}
-//       </body>
-//     </html>
-//   );
-// }
-
-
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body className={`${urbanistSans.className}`}>
-       
-//       <CoverParticles/>
-//         <NavbarBajo />
-//         <Header />
-//         {children}
-   
-//       </body>
-//     </html>
-//   );
-// }
